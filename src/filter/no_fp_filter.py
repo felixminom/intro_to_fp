@@ -1,6 +1,6 @@
 import json
 
-with open('/home/fmino/Code/IntroFP/src/employees.json') as json_file:
+with open('src/employees.json') as json_file:
     data = json.load(json_file)
 
     # 1. let's get all employees with less than 3 years

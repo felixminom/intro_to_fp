@@ -3,13 +3,7 @@ import json
 def lesser_than(object, key, n_years):
     return True if object[key] <= n_years else False
 
-# Function to combine two
-# function which it accepts
-# as argument
-def composite_function(f, g):
-    return lambda x : f(g(x))
-
-with open('/home/fmino/Code/IntroFP/src/employees.json') as json_file:
+with open('src/employees.json') as json_file:
     data = json.load(json_file)
 
     # 1. let's get all employees with less than 3 years of experience
