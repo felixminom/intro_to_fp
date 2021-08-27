@@ -6,7 +6,7 @@
 #    7 years: 10,%
 #    8 years: 12.5%
 #    9 years: 15%
-#    1 years': 20%
+#    10 years: 20%
 
 import json
 

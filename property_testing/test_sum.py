@@ -4,13 +4,13 @@ from sum import sum
 def test_sum():
     assert sum(1,2) == 3
 
-# from fixed_sum import sum as fixed_sum
+from fixed_sum import sum as fixed_sum
 
 @pytest.mark.parametrize(
     'num1, num2, expected',
     [(3,5,8),(-2,-2,-4), (-1,5,4), (3,-5,-2), (0,5,5)])
 def test_sum_parametized(num1, num2, expected):
-    assert sum(num1, num2) == expected
+    assert fixed_sum(num1, num2) == expected
 
 from hypothesis import given, settings, Verbosity, example
 import hypothesis.strategies as st
@@ -43,4 +43,4 @@ def test_sum(num1, num2):
 @given(st.integers(), st.integers())
 def test_sum_less_than_25(num1,num2):
     assert sum(num1, num2) == num1 + num2
-    assert num1 <= 25
+    #assert num1 <= 25

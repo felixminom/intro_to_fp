@@ -14,6 +14,9 @@ with open('src/employees.json') as json_file:
 
     print(f'Employees with less than 3 years of experience:{len(employees_filtered)}')
 
+    # 2. let's get all employees with less than 3 years of experience
+    # and less than 25 years
+
     employees_3_years_and_25_years = []
 
     for i in range(len(data)):
